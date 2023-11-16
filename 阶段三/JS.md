@@ -78,8 +78,60 @@ js简介
 
 常量
 
-
+​	声明：const而不是let
 
 数据类型	
 
+​	基本数据类型
+
+​		number 数字类型：let num
+
+​		string 字符串类型：
+
+​			单引号，双引号，反引号没区别，let str = “ ”；
+
+​			字符串拼接 console.log('德华' + '老师')，可以加变量，数字；
+
+​			模板字符串：用反引号；${变量名}；
+
+​		boolean 布尔类型：console.log(3>4)返回false;
+
+​		undefined 未定义类型：console.log(未赋值变量)返回undefined
+
+​		null 空类型：赋值为空
+
+检测数据类型
+
+​	运算符：typeof x； 
+
+​	函数形式：typeof(x)；
+
 类型转换
+
+​	为什么
+
+​		JS是弱数据类型，坑：使用表单、prompt获取过来的数据默认是字符串类型，此时不能进行简单加法运算。
+
+​	隐式转换
+
+  + 号两边只要有一个是字符串，会把另外一个转为字符串
+  + 除+以外的所有算数运算符会把数据转为数字类型
+  + +作为正号解析可以转为数字型
+
+​	显示转换
+
+​		Number(数据)
+
+​			若字符串内容里又非数字，转换结果为NaN；
+
+​			NaN也是number类型的数据，代表非数字；
+
+​		parseInt(数据)
+
+​			只保留整数console.log(parseInt(12px))
+
+​		parseFloat(数据)
+
+​			可以保留小数console.log(parseFloat(12.3px))
+
+​		
