@@ -18,6 +18,6 @@
 
 	+ #### html.md文件
 
-	+ #### [我的网页](wy-wa.github.com)
+	+ #### [我的网页](wy-wa.github.io)
 	
 	
