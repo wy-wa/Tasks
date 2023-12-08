@@ -7,11 +7,31 @@ a {
     text-decoration: none;
 }
 
+/*平滑跳转实现*/
+html {
+    scroll-behavior: smooth;
+}
 
+/*大盒子装下整个网页*/
 .box {
     height: 8000px;
     background-color: #fff;
 }
+
+/*所有模块的锚定链接部分的实现*/
+.pick {
+    height: 250px;
+    width: 300px;
+    line-height: 250px;
+    margin: auto;
+}
+
+.pick a {
+    display: block;
+    font-size: 50px;
+}
+
+
 
 /*导航栏代码开始*/
 .box .nav {
@@ -38,7 +58,7 @@ a {
     color: dimgray;
 }
 
-/*导航栏中二维码的实现*/
+/*导航栏中er维码的实现*/
 .nav .er {
     display: none;
     position: fixed;
@@ -107,8 +127,8 @@ a {
 
 
 
-
 /*introduction部分代码开始*/
+/*波浪形背景图片实现*/
 .Introduction {
     border-top: 1px solid #000;
     background-size: 100%;
@@ -116,18 +136,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.pick {
-    height: 250px;
-    width: 300px;
-    line-height: 250px;
-    margin: auto;
-}
-
-.pick a {
-    display: block;
-    font-size: 50px;
-}
-
+/*四个盒子代码开始*/
 .one,
 .two,
 .three,
@@ -149,6 +158,8 @@ a {
     box-shadow: 10px 10px 10px rgba(10, 10, 10, .8);
 }
 
+/*一二盒子和三四盒子捆绑（偷个懒）*/
+/*四个盒子三种文字(h1 h2 p)部分和img部分*/
 .one h1,
 .three h1 {
     height: 100px;
@@ -225,11 +236,13 @@ a {
     transform: rotate(5deg);
 }
 
+/*四个盒子代码结束*/
 /*introduction部分代码结束*/
 
 
 
 /*About部分代码开始*/
+/*主盒子*/
 .About_Us {
     height: 980px;
     width: 1300px;
@@ -240,7 +253,7 @@ a {
     background-color: rgb(255, 253, 245);
 }
 
-/*About四个角图标实现开始*/
+/*About四个角斜杠图标实现开始*/
 .About_Us .bg2 {
     width: 300px;
     height: 125px;
@@ -285,7 +298,7 @@ a {
 /*About部分四个角图标实现结束*/
 
 
-/*About部分蝴蝶代码实现开始*/
+/*About部分蝴蝶图片代码实现开始*/
 .About_Us .butterfly {
     width: 300px;
     height: 300px;
@@ -300,9 +313,9 @@ a {
     transform: translateY(30px);
 }
 
-/*About部分蝴蝶代码实现结束*/
+/*About部分蝴蝶图片代码实现结束*/
 
-/*三个内容模块abc主要模版*/
+/*三个内容模块(a b c)主要模版*/
 .About_Us .content {
     transition: all 0.5s;
     width: 210px;
@@ -317,7 +330,7 @@ a {
     transform: scale(1.1);
 }
 
-/*About部分abc三个模块里的图标*/
+/*a b c三个模块里的图标*/
 .a img,
 .b img,
 .c img {
@@ -326,7 +339,7 @@ a {
     margin: 30px;
 }
 
-/*abc模块中b的微调*/
+/*a b c模块中b的微调*/
 .About_Us .b {
     left: 525px;
     height: 500px;
@@ -342,7 +355,7 @@ a {
     left: 800px;
 }
 
-/*abc模块中文字部分*/
+/*a b c模块中文字部分*/
 .About_Us .content p {
     padding: 15px;
     font-size: 20px;
@@ -350,7 +363,10 @@ a {
 
 /*About部分代码结束*/
 
+
+
 /*Contact部分代码开始*/
+/*主盒子*/
 .Contact_Us {
     height: 800px;
     width: 1300px;
@@ -361,7 +377,7 @@ a {
     margin: auto;
 }
 
-/*五个图标绝对定位实现开始*/
+/*五个图标（绝对定位）实现开始*/
 .Contact_Us .tree {
     width: 200px;
     height: 850px;
@@ -416,9 +432,8 @@ a {
 
 /*五个图标绝对定位实现结束*/
 
-
-
-/*前三条*/
+/*四条内容应用无序列表实现结束*/
+/*文字部分前三条*/
 .Contact_Us .profile ul li {
     height: 50px;
     width: 800px;
@@ -428,7 +443,7 @@ a {
     margin-bottom: 40px;
 }
 
-/*第四条PS*/
+/*文字部分第四条PS*/
 .Contact_Us .profile ul p {
     font-size: 20px;
     margin: 0 300px;
@@ -439,8 +454,7 @@ a {
 
 /*四条内容应用无序列表实现结束*/
 
-
-/*三个按钮代码应用列表实现开始*/
+/*三个按钮应用列表实现开始*/
 .Contact_Us .footer ul {
     margin: 50px 200px;
 }
@@ -477,8 +491,9 @@ a {
 /*Contact部分代码实现结束*/
 
 
+
 /*Q&A部分代码实现开始*/
-/*总体模版*/
+/*主盒子*/
 .More_questions {
     width: 1500px;
     margin: 150px auto;
@@ -488,12 +503,12 @@ a {
     background-size: 100%;
 }
 
-/*锚定链接微调*/
+/*Q&A锚定链接微调*/
 .More_questions .pick a {
     width: 400px;
 }
 
-/*问题应用块元素实现*/
+/*问题-应用块元素实现*/
 .More_questions .words label {
     display: inline-block;
     height: 50px;
@@ -507,7 +522,7 @@ a {
     color: bisque;
 }
 
-/*回答应用隐藏p标签实现*/
+/*回答-应用隐藏p标签实现*/
 .More_questions .words p {
     display: none;
     width: 600px;
@@ -519,7 +534,7 @@ a {
     background-color: rgba(0, 0, 0, .2);
 }
 
-/*最后一对问答的下边距的微调*/
+/*最后一对问答-的下边距的微调*/
 .More_questions .words .last {
     padding-bottom: 200px;
 }

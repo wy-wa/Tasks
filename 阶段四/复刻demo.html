@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Geek招新网站 加入我们</title>
     <link rel="stylesheet" href="style.css">
-
+    <!--使用js粗劣实现Contact部分E-mail复制到剪切板功能-->
     <script>
         async function myFunction() {
             /* 获取文本框 */
@@ -27,31 +27,38 @@
 </head>
 
 <body>
-
+    <!--包含整个网页大盒子box-->
     <div class="box">
+        <!--顶部导航栏开始-->
         <div class="nav">
             <a href="#Introduction" class="first">Introduction</a>
             <a href="#About">About Us</a>
             <a href="https://campus.new-thread.com/" target="_blank">NewThread</a>
             <a href="#Contact">Contact Us</a>
             <a href="#More">Q&A</a>
+            <!--er微码-->
             <div class="er">
                 <div class="san_jiao"></div>
                 <img src="qrcode_1699620268564.jpg" alt="">
             </div>
         </div>
+        <!--顶部导航栏结束-->
 
+        <!--主页及其内部Geek logo开始-->
         <div class="homepages">
             <div class="logo">
                 <img src="decoration_Geek.png" alt="">
             </div>
         </div>
+        <!--主页及其内部Geek logo结束-->
 
+        <!--introduction部分开始-->
         <div class="Introduction">
+            <!--锚定定位实现-->
             <div class="pick">
                 <a id="Introduction">Introduction</a>
             </div>
-
+            <!--四个部分介绍（四个小盒子）-->
             <div class="one">
                 <img src="Geek_Programmer.png" alt="">
                 <h1>开发程序猿</h1>
@@ -90,12 +97,16 @@
 
             </div>
         </div>
+        <!--introduction部分结束-->
 
+        <!--About部分开始-->
         <div class="About_Us">
+            <!--锚定定位实现-->
             <div class="pick">
                 <a id="About">About Us</a>
             </div>
 
+            <!--四个角的斜杠bg-->
             <div class="bg2">
                 <img src="decoration_Decoration.png" alt="">
             </div>
@@ -109,10 +120,12 @@
                 <img src="decoration_Decoration.png" alt="">
             </div>
 
+            <!--蝴蝶图片实现-->
             <div class="butterfly">
                 <img src="decoration_Butterfly.png" alt="" title="保持好奇心">
             </div>
 
+            <!--文字内容-->
             <div class="content a">
                 <img src="about_Speech.png" alt="">
                 <p>每周我们会举行一次技术例会，用来汇报我们的学习内容，供成员之间交流学习。</p>
@@ -126,12 +139,16 @@
                 <p>耐心、毅力是我们必备的品质，每周我们会至少花30小时在实验室中。以保证技术的精进。</p>
             </div>
         </div>
+        <!--About部分结束-->
 
+        <!--Contact部分开始-->
         <div class="Contact_Us">
+            <!--锚定定位实现-->
             <div class="pick">
                 <a id="Contact">Contact Us</a>
             </div>
 
+            <!--五个图标（绝对定位）实现-->
             <div class="tree">
                 <img src="decoration_Tree.png" alt="">
             </div>
@@ -147,7 +164,9 @@
             <div class="chameleon">
                 <img src="decoration_Chameleon.png" alt="">
             </div>
+            <!--五个图标（绝对定位）结束-->
 
+            <!--文字部分-->
             <div class="profile">
                 <ul>
                     <li>热爱计算机，具有geek精神，喜欢DIY，动手能力较强</li>
@@ -158,20 +177,28 @@
                 </ul>
             </div>
 
+            <!--按钮部分-->
             <div class="footer">
                 <ul>
                     <li><a href="#">QQ-group</a></li>
                     <input type="hidden" value="newthread_geek@outlook.com" id="myInput">
                     <li><a href="#" onclick="myFunction();return false;">E-mail</a></li>
-                    <li><a href="#">github</a></li>
+                    <li><a href="https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click&vd_source=9408cd9af8ee37934c16890433bfaace"
+                            target="_blank">github</a>
+                    </li>
                 </ul>
             </div>
         </div>
+        <!--Contact部分结束-->
 
+        <!--Q&A部分开始-->
         <div class="More_questions">
+            <!--锚定定位实现-->
             <div class="pick">
                 <a id="More">More Questions</a>
             </div>
+
+            <!--问答部分（点击隐藏的拙劣代码实现）-->
             <div class="words">
                 <input type="checkbox" class="l1" id="l1" style="display:none">
                 <label for="l1" class="l1">1.什么是Geek(极客)？Geek精神又是什么？</label>
@@ -226,6 +253,7 @@
                     idea，那么就可以找志同道合的人一起合作。”
                 </p>
             </div>
+            <!--Q&A部分结束-->
         </div>
     </div>
 </body>
