@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.box {
+    height: 8000px;
+    background-color: #fff;
+}
+
+/*导航栏代码开始*/
+.box .nav {
+    position: sticky;
+    top: 10px;
+    height: 50px;
+    margin: 10px;
+    background-color: rgb(252, 178, 48, 0.9);
+    border-radius: 15px;
+    line-height: 50px;
+    z-index: 2;
+}
+
+.nav a {
+    display: inline-block;
+    border-radius: 15px;
+    padding: 0 105px;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.nav a:hover {
+    background-color: darkorange;
+    color: dimgray;
+}
+
+/*导航栏中二维码的实现*/
+.nav .er {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 80px;
+    width: 225px;
+    height: 300px;
+    border-radius: 10px;
+    border: 5px solid coral;
+    background-color: aqua;
+}
+
+.nav .er img {
+    width: 100%;
+    height: 100%;
+}
+
+/*导航栏中小三角形的实现*/
+.nav .er .san_jiao {
+    position: absolute;
+    top: -22px;
+    right: 100px;
+    height: 0;
+    width: 0;
+    border: 10px solid transparent;
+    border-bottom-color: coral;
+}
+
+
+.first:hover~.er {
+    display: block;
+}
+
+/*导航栏代码结束*/
+
+
+
+/*主页代码开始*/
+/*主页背景实现*/
+.homepages {
+    height: 1100px;
+    background-image: url(background_Homepage.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top: 1px solid #000;
+}
+
+/*主页geek图标实现*/
+.homepages .logo {
+    height: 300px;
+    width: 500px;
+    margin: 150px auto;
+    transition: all 0.5s;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo:hover {
+    transform: scale(1.4);
+}
+
+/*主页代码结束*/
+
+
+
+
+/*introduction部分代码开始*/
+.Introduction {
+    border-top: 1px solid #000;
+    background-size: 100%;
+    background-image: url(decoration_Transition.png);
+    background-repeat: no-repeat;
+}
+
+.pick {
+    height: 250px;
+    width: 300px;
+    line-height: 250px;
+    margin: auto;
+}
+
+.pick a {
+    display: block;
+    font-size: 50px;
+}
+
+.one,
+.two,
+.three,
+.four {
+    width: 1200px;
+    height: 670px;
+    border-radius: 50px;
+    border: 5px solid black;
+    background-color: aquamarine;
+    margin: 50px auto;
+    transition: all 0.5s;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px rgba(10, 10, 10, .8);
+}
+
+.one h1,
+.three h1 {
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+    margin: 20px 50px;
+}
+
+.one h2,
+.three h2 {
+    height: 100px;
+    line-height: 100px;
+    margin: 20px 10px;
+    font-size: 39px;
+    color: pink;
+}
+
+.one p,
+.three p {
+    width: 600px;
+    margin: 50px 50px;
+    font-size: 25px;
+}
+
+.one img,
+.three img {
+    float: right;
+    width: 400px;
+    height: 500px;
+    size: 100%;
+    margin: 75px 50px;
+}
+
+.two h1,
+.four h1 {
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+    margin: 25px 500px;
+}
+
+.two h2,
+.four h2 {
+    height: 100px;
+    color: red;
+    margin: 25px 0;
+    line-height: 50px;
+    font-size: 40px;
+}
+
+.two p,
+.four p {
+    width: 600px;
+    margin: 50px 500px;
+    font-size: 25px;
+}
+
+.two img,
+.four img {
+    float: left;
+    width: 400px;
+    height: 500px;
+    size: 100%;
+    margin: 75px 50px;
+}
+
+.one img,
+.three img {
+    transition: all 0.5s;
+}
+
+.one img:hover,
+.three img:hover {
+    transform: rotate(5deg);
+}
+
+/*introduction部分代码结束*/
+
+
+
+/*About部分代码开始*/
+.About_Us {
+    height: 980px;
+    width: 1300px;
+    border-radius: 30px;
+    border: 10px solid rgb(127, 127, 127);
+    position: relative;
+    margin: 100px auto;
+    background-color: rgb(255, 253, 245);
+}
+
+/*About四个角图标实现开始*/
+.About_Us .bg2 {
+    width: 300px;
+    height: 125px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+.About_Us .bg1 {
+    width: 300px;
+    height: 125px;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    transform: rotateY(180deg);
+}
+
+.About_Us .bg3 {
+    width: 300px;
+    height: 125px;
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    transform: rotateX(180deg);
+}
+
+.About_Us .bg4 {
+    width: 300px;
+    height: 125px;
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    transform: rotateY(180deg) rotateX(180deg);
+}
+
+.About_Us img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/*About部分四个角图标实现结束*/
+
+
+/*About部分蝴蝶代码实现开始*/
+.About_Us .butterfly {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.butterfly:hover {
+    transform: translateY(30px);
+}
+
+/*About部分蝴蝶代码实现结束*/
+
+/*三个内容模块abc主要模版*/
+.About_Us .content {
+    transition: all 0.5s;
+    width: 210px;
+    height: 450px;
+    border-radius: 30px;
+    border: 8px solid #7f107f;
+    background-color: #fffdf5;
+    position: absolute;
+}
+
+.About_Us .content:hover {
+    transform: scale(1.1);
+}
+
+/*About部分abc三个模块里的图标*/
+.a img,
+.b img,
+.c img {
+    width: 70%;
+    height: 40%;
+    margin: 30px;
+}
+
+/*abc模块中b的微调*/
+.About_Us .b {
+    left: 525px;
+    height: 500px;
+}
+
+/*a的微调*/
+.a {
+    left: 250px;
+}
+
+/*c的微调*/
+.c {
+    left: 800px;
+}
+
+/*abc模块中文字部分*/
+.About_Us .content p {
+    padding: 15px;
+    font-size: 20px;
+}
+
+/*About部分代码结束*/
+
+/*Contact部分代码开始*/
+.Contact_Us {
+    height: 800px;
+    width: 1300px;
+    border: 10px solid #188989;
+    border-radius: 30px;
+    position: relative;
+    background: #fff;
+    margin: auto;
+}
+
+/*五个图标绝对定位实现开始*/
+.Contact_Us .tree {
+    width: 200px;
+    height: 850px;
+    position: absolute;
+    top: 0;
+    right: -50px;
+
+}
+
+.Contact_Us .leaf {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 100px;
+    left: 420px;
+}
+
+.Contact_Us .tree_with_leaf {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+
+.Contact_Us .ladybug {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+}
+
+.Contact_Us .chameleon {
+    width: 500px;
+    height: 300px;
+    z-index: 0;
+    position: absolute;
+    bottom: -50px;
+    right: 100px;
+}
+
+.Contact_Us .tree img,
+.Contact_Us .leaf img,
+.Contact_Us .tree_with_leaf img,
+.Contact_Us .ladybug img,
+.Contact_Us .chameleon img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/*五个图标绝对定位实现结束*/
+
+
+
+/*前三条*/
+.Contact_Us .profile ul li {
+    height: 50px;
+    width: 800px;
+    line-height: 50px;
+    margin-left: 300px;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+/*第四条PS*/
+.Contact_Us .profile ul p {
+    font-size: 20px;
+    margin: 0 300px;
+    list-style: none;
+    height: 100px;
+    color: #bebabc;
+}
+
+/*四条内容应用无序列表实现结束*/
+
+
+/*三个按钮代码应用列表实现开始*/
+.Contact_Us .footer ul {
+    margin: 50px 200px;
+}
+
+.Contact_Us .footer ul li {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+
+}
+
+.Contact_Us .footer ul li a {
+    display: block;
+    transition: all 0.5s;
+    position: relative;
+    /*设置相对定位并使z-index值高于蜥蜴，以防挡住按钮*/
+    z-index: 1;
+    width: 150px;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    margin-left: 100px;
+    background-color: #268927;
+    box-shadow: 5px 5px 10px rgba(10, 10, 10, .8);
+    border-radius: 20px;
+}
+
+.Contact_Us .footer ul li a:hover {
+    transform: scale(1.1);
+}
+
+/*三个按钮代码应用列表实现结束*/
+/*Contact部分代码实现结束*/
+
+
+/*Q&A部分代码实现开始*/
+/*总体模版*/
+.More_questions {
+    width: 1500px;
+    margin: 150px auto;
+    border: 10px solid #749aed;
+    border-radius: 30px;
+    background-image: url(background_QA.png);
+    background-size: 100%;
+}
+
+/*锚定链接微调*/
+.More_questions .pick a {
+    width: 400px;
+}
+
+/*问题应用块元素实现*/
+.More_questions .words label {
+    display: inline-block;
+    height: 50px;
+    padding: 25px 400px;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
+.More_questions .words label:hover {
+    transform: scale(1.1);
+    color: bisque;
+}
+
+/*回答应用隐藏p标签实现*/
+.More_questions .words p {
+    display: none;
+    width: 600px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 20px auto;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/*最后一对问答的下边距的微调*/
+.More_questions .words .last {
+    padding-bottom: 200px;
+}
+
+.More_questions .words .p7 {
+    margin-top: -150px;
+    margin-left: 450px;
+    margin-bottom: 100px;
+}
+
+/*实现点击隐藏的拙劣代码（学艺不精）*/
+.l1:checked~.p1 {
+    display: block;
+}
+
+.l2:checked~.p2 {
+    display: block;
+}
+
+.l3:checked~.p3 {
+    display: block;
+}
+
+.l4:checked~.p4 {
+    display: block;
+}
+
+.l5:checked~.p5 {
+    display: block;
+}
+
+.l6:checked~.p6 {
+    display: block;
+}
+
+.l7:checked~.p7 {
+    display: block;
+}
+
+/*Q&A部分代码实现结束*/
